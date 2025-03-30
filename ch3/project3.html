@@ -1,0 +1,35 @@
+<!--Abraham Cardeas March 29, 2025-->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Questions</h1>
+    <h2>Name a situation where you would need to create an "if" statement.</h2>
+    <p>
+      One situation where if statements could prove useful would by in quickly
+      categorizing a person's income into their determined tax bracket.
+    </p>
+    <h2>When comparing values, in what data type is the result stored?</h2>
+    <p>Boolean</p>
+    <script>
+      //stores username given by user
+      let username = prompt("What is your name?", "");
+      //stores permission given by user as boolean
+      let proceed = confirm("may we use your name on the web page?");
+
+      // returns a log of confirmation of true or rejection if false
+      if (proceed == true) {
+        console.log("Yes, I can use your name on this web page");
+        console.log(username);
+      } else {
+        console.log(
+          "No, you can not use my name on this web page. Privacy Please."
+        );
+      }
+
+      //stores user input in age variable and alerts user with message with username and age
+      let age = prompt("What is your age?", "");
+      alert(`Hi ${username}! You are ${age} years old.`);
+    </script>
+  </body>
+</html>
