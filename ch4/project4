@@ -1,0 +1,50 @@
+<!--Abraham Cardeas April 5, 2025-->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Questions</h1>
+    <h2>When would you use a switch statement in your projects?</h2>
+    <p>To replace lengthy if-else-if statements</p>
+    <script>
+      //prompts user for their favorite day
+      let favDay = prompt("What is your favorite day of the week?", "");
+
+      //switch case that manages the input
+      switch (favDay.toLowerCase()) {
+        case "monday":
+          console.log("...you sure?");
+          break;
+
+        case "tuesday":
+          console.log("better than monday!");
+          break;
+
+        case "wednesday":
+          console.log("you must be a busy bee!");
+          break;
+
+        case "thursday":
+          console.log("yay! almost friday!");
+          break;
+
+        case "friday":
+          console.log("nothing like a good rest after hard work.");
+          break;
+
+        case "saturday":
+          console.log("best day to get plenty of rest!");
+          break;
+
+        case "sunday":
+          console.log("enjoy preparing for the coming week?");
+          break;
+
+        //fallback response
+        default:
+          console.log("hm, never heard of that one...");
+          break;
+      }
+    </script>
+  </body>
+</html>
