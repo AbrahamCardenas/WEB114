@@ -1,0 +1,39 @@
+<!--Abraham Cardenas April 19, 2025-->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Questions</h1>
+    <h2>What is the purpose of a function?</h2>
+    <p>to reuse code into a program with a specific purpose</p>
+    <script>
+      let username = prompt("What is your name?", "");
+
+      //asks user for n amount of weekly gas bill, returns average bill
+      function calcGasAvg() {
+        let count = 0;
+        let total = 0;
+        let weeklyGas = 0;
+        weeklyGas = parseFloat(
+          prompt("Enter you weekly gas total. Enter -1 when done.")
+        );
+
+        while (weeklyGas !== -1) {
+          total = total + weeklyGas;
+          console.log(total);
+          count++;
+          weeklyGas = parseFloat(
+            prompt("Enter you weekly gas total. Enter -1 when done.")
+          );
+        }
+
+        return total / count;
+      }
+
+      let gas = calcGasAvg();
+
+      //displays username and average bill
+      confirm(`${username}'s average weekly gas bill is ${gas.toFixed(2)}`);
+    </script>
+  </body>
+</html>
