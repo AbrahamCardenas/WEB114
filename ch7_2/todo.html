@@ -1,0 +1,32 @@
+<!--Abraham Cardenas May 4, 2025-->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Questions</h1>
+    <h2>Why is the JavaScript textContent property safer than innerHTML?</h2>
+    <p>
+      The textContent property is safer because it treats any incoming text for
+      a user as only text, whereas the innerHTML will treat it as text and HTML,
+      leading to a vulnerability where a user can insert HTML into the website.
+    </p>
+    <h2>
+      Explain the relationship between an HTML attribute and a corresponding DOM
+      property (explain the connection to JavaScript). Use a specific example in
+      your answer
+    </h2>
+    <p>
+      In short, an HTML attribute such as an id called "id='example'" can be
+      directly changed by interacting with a property in the document object.
+      This current example's equivalent would be
+      "document.getElementById('example')" to target the element.
+    </p>
+    <!--Code begins here-->
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" />
+    <button id="addTaskBtn">Add Task</button>
+    <ul id="taskList"></ul>
+    <p></p>
+    <script src="todo.js"></script>
+  </body>
+</html>
