@@ -49,6 +49,7 @@ gameSpace.onmousedown = function (event) {
 //Functionality for enemy reaction and scorekeeping
 enemyPiece.onmousedown = function (event) {
   console.log("clicked");
+  if (timeOn == false) return;
   enemyPiece.style.backgroundImage = "url('explosion.png')";
   setTimeout(() => (this.style.backgroundImage = "url('asteroid.png')"), 500);
   moveEnemy();
