@@ -1,0 +1,77 @@
+body {
+  background-image: linear-gradient(#030d11, #0f3643);
+}
+
+#timer-display{
+  position: relative;
+  margin: auto;
+  background-color: black;
+  width: 50px;
+  padding: .5%;
+  color: white;
+  text-align: center;
+  border: 5px solid #41dcc0;
+  border-radius: 10px;
+}
+
+#game-space {
+  position: relative;
+  margin: auto;
+  width: 90vw;
+  height: 800px;
+  border: 10px solid #41dcc0;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  cursor: pointer;
+  background-image: url("thebigspace.png");
+}
+
+#piece {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  transition: all .1s;
+  background-size: cover;
+}
+
+#enemy-piece {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+}
+
+#stat-board {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: black;
+  width: 90vw;
+  height: 150px;
+  border: 5px solid #41dcc0;
+  border-radius: 10px;
+  color: white;
+}
+
+#stat-board > div {
+  margin: auto;
+}
+
+#score-list {
+  list-style: none;
+  height: 100px;
+  overflow: auto;
+}
+
+#start-game {
+  background-color: red;
+  color: black;
+  padding: 1%;
+  border-radius: 10px;
+}
